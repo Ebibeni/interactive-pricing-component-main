@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
@@ -30,24 +30,24 @@
           <div class="pageviews">
             <span id="pageviews">100K</span> PAGEVIEWS
           </div>
-          <div></div>
           <div>
             <!-- <span class="priceSymbol"></span> -->
-            <span id="price">&#36;16.00</span> / month
+            <span id="price">&#36;16.00</span> 
+            <span id="duration">/ month</span>
           </div>
           <div class="slideBar">
-            <input type="range" min="10" max="100" value="50" class="slider" id="myRange">
+            <input type="range" value="50" min="0" max="100" id="range" step="25" onclick="rangeUpdate()"/>
           </div>
           <div class="billing">
             <div class="billingChild">
-              Monthly Billing
+              <span>Monthly Billing</span>
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" id="accept" name="accept" onclick="validate()">
               <span class="switchSlider round"></span>
             </label>
-            Yearly Billing 
+            <span>Yearly Billing </span>
             <span class="discount">
-              25% discount
+              
             </span>
             </div>
             
