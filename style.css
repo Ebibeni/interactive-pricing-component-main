@@ -143,7 +143,7 @@ input:checked + .switchSlider:before {
 .details{
   line-height: 2.1;
 }
-#icon::before {
+.icon::before {
   content: url(/images/icon-check.svg);
   margin: 0px 10px 0px 0px;;
 }
